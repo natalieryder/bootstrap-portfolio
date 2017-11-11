@@ -1,63 +1,76 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Natalie Ryder's Portfolio</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/styles2.css">
 
 	<link rel="icon" 
 	    type="image/png" 
 	    href="./assets/images/favicon.png">
 </head>
 <body>
-	<header>
-		<div class="content flex">
-			<h1>Natalie Ryder</h1>
-			<nav class="flex">
-				<a href="index.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</div>
-	</header>
-	<div class="content-wrapper">
-		<section class="content flex">
-			<article class="main-content">
-				<h1>Contact</h1>
-				<hr>
-				<form action="" method="post">
-					<label for="name">Name</label>
-					<input type="text" id="name"  placeholder="Your Name">
-					<label for="email">Email</label>
-					<input type="email" id="email"  placeholder="Email">
-					<label for="message">Message</label>
-					<textarea id="message" rows="10"></textarea>
-					<button class="btn-submit" type="submit">Submit</button>
-				</form>
-				
-			</article>
-			<aside class="sidebar">
-				<h2>Connect With Me</h2>
-				<hr>
-				<div class="flex">
-					<div class="icon">
-						<a href="https://www.github.com/natalieryder" target="_blank"><img src="./assets/images/github.svg" alt=""></a>
-					</div>
-					<div class="icon">
-						<a href="https://www.linkedin.com/in/natalieryder" target="_blank"><img src="./assets/images/linkedin.svg" alt=""></a>
-					</div>
-					<div class="icon">
-						<a href="https://stackexchange.com/users/8089736/natalie-ryder" target="_blank"><img src="./assets/images/stackoverflow.svg" alt=""></a>
-					</div>
+	
+		<header class="sticky-top bg-white">
+			<div class="container">
+				<div class="align-items-center row no-gutters">
+					<h1 class="col-12 col-sm-5 text-center">Natalie Ryder</h1>
+					<nav class="col-12 col-sm-7 nav nav-pills nav-fill py-3 px-0 py-md-0 pl-md-5">
+						<a class="mx-1 nav-item nav-link" href="index.html">About</a>
+						<a class="mx-1 nav-item nav-link" href="portfolio.html">Portfolio</a>
+						<a class="mx-1 nav-item nav-link active" href="contact.html">Contact</a>
+					</nav>
 				</div>
-			</aside>
-		</section>
-	</div>
-	<footer>
-		<p>Copyright 2017 Natalie Ryder</p>
-	</footer>
+			</div>
+		</header>
+		<div class="content-wrapper">
+			<div class="container d-block">
+					<section class="row py-5">
+						<div class="col-12 col-md-8">
+							<article class="main-content border p-4 bg-white">
+								<h1 class="mb-2">Contact</h1>
+								<hr class="mb-4"> 
+								<form action="" method="post">
+									<label for="name">Name</label>
+									<input type="text" id="name"  placeholder="Your Name">
+									<label for="email">Email</label>
+									<input type="email" id="email"  placeholder="Email">
+									<label for="message">Message</label>
+									<textarea id="message" rows="10"></textarea>
+									<button class="btn-submit" type="submit">Submit</button>
+								</form>
+										
+							</article>
+						</div>
+						<div class="col-12 col-md-4">
+							<aside class="sidebar border p-4 bg-white mt-4 mt-md-0">
+								<h2 class="mb-2">Connect With Me</h2>
+								<hr class="mb-4">
+								<div class="row no-gutters">
+									<div class="icon col-4 px-2">
+										<a href="https://www.github.com/natalieryder" target="_blank"><img class="img-fluid" src="./assets/images/github.svg" alt=""></a>
+									</div>
+									<div class="icon col-4 px-2">
+										<a href="https://www.linkedin.com/in/natalieryder" target="_blank"><img class="img-fluid" src="./assets/images/linkedin.svg" alt=""></a>
+									</div>
+									<div class="icon col-4 px-2">
+										<a href="https://stackexchange.com/users/8089736/natalie-ryder" target="_blank"><img class="img-fluid" src="./assets/images/stackoverflow.svg" alt=""></a>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</section>
+				
+			</div>
+		</div>
+		<footer class="text-center">
+			<p>Copyright &copy; 2017 Natalie Ryder</p>
+		</footer>
+
 </body>
 </html>
